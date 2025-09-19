@@ -17,7 +17,7 @@ function UserList({ onEdit }) {
   };
 
   return (
-    <Row gutter={[16, 16]} className="user-list-container">
+    <Row gutter={[24, 16]} className="user-list-container">
       {users.map(user => (
         <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
           <UserCard
