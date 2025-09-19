@@ -1,69 +1,86 @@
+# User Profiles Advanced
 
-# User Profiles Basic
+A React-based user profile management application featuring an elegant UI with pleasant background colors, card styling, and user interaction capabilities.
 
-A React application that displays user profiles fetched from a public API. Each profile includes an avatar, name, email, phone, address, website, and company name. The app uses custom CSS and React Context for state management.
+## Demo
+
+Check out the live demo here: [Demo](https://user-profiles-advanced-ochre.vercel.app/)
 
 ## Features
 
-- Fetches and displays 10 user profiles from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
-- Unique avatars generated via [DiceBear Avatars](https://api.dicebear.com/9.x/avataaars/)
-- Loading indicator using `spinkit` (plane spinner while fetching data)
-- Custom CSS for all components (no Bootstrap)
-- Component-based folder structure
-- State management with React Context
+- Display user profiles with detailed information including name, email, phone, address, website, and company.
+- Pleasant and eye-catching card backgrounds with consistent styling.
+- Responsive card layout with consistent heights across different screen sizes.
+- User interaction buttons for liking, editing, and deleting profiles.
+- Edit user details via a modal form with validation.
+- Avatar generation using Dicebear Avataaars API.
+- Context API for state management of user data.
+- Built with React and Ant Design components for a modern UI.
 
-## Project Structure
+## Installation
 
-```
-src/
-	components/
-		UserCard/
-			UserCard.js
-			UserCard.css
-		UserList/
-			UserList.js
-			UserList.css
-	context/
-		UserContext.js
-	App.js
-	index.js
-	index.css
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd user-profiles-advanced
 ```
 
-## Getting Started
-
-### Live Demo
-
-Check out the live demo deployed on Vercel: [DEMO](https://user-profiles-basic-roan.vercel.app/)
-
-### Install dependencies
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Run the app in development mode
+3. Start the development server:
 
 ```bash
 npm start
 ```
 
-Open `http://localhost:3000` to view it in your browser.
+4. Open your browser and navigate to `http://localhost:3000` (or the port specified) to view the app.
 
-### Build for production
+## Project Structure
 
-```bash
-npm run build
+```
+user-profiles-advanced/
+├── public/
+│   ├── index.html
+│   ├── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── UserCard/
+│   │   │   ├── UserCard.js
+│   │   ├── UserList/
+│   │   │   ├── UserList.js
+│   │   │   ├── UserList.css
+│   ├── context/
+│   │   ├── UserContext.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
 ```
 
-## Main Dependencies
+## Technologies Used
 
-- React 19
-- spinkit
-- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users)
-- [DiceBear Avatars](https://avatars.dicebear.com/)
+- React
+- Ant Design
+- Dicebear Avataaars API
+- Context API for state management
+- CSS for styling and layout
 
-## Customization
+## Contributing
 
-- All component styles are in their respective `.css` files under `src/components/`.
-- User data fetching and state are managed in `src/context/UserContext.js`.
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Enjoy managing your user profiles with a beautiful and functional interface!
